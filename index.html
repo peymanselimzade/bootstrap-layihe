@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-5 col-sm-6">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="Ekran görüntüsü 2022-10-13 101549.png" alt="" />
+            </div>
+            <div class="col-sm-3 d-none d-md-block">
+              <img src="Ekran görüntüsü 2022-10-13 102053.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-7 col-sm-6">
+          <div class="row align-items-center justify-content-end">
+            <div class="col-sm-8 d-none d-md-block no-gutters px-0">
+              <div class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="#">Demos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="#">Block</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 no-gutters px-0">
+              <div class="w-100">
+                <ul class="list-group list-unstyled list-group-horizontal justify-content-end">
+                  <li class="list-item">
+                    <a class="nav-link active" href="#"><i class="fa-sharp fa-solid fa-right-to-bracket"></i></a>
+                  </li>
+                  <li class="list-item">
+                    <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                  </li>
+                  <li class="list-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-lock"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </nav>
+  <div class="container">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          All Categories
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card p-5 justify-content-end" style="height: 250px">
+                <div class="row h-100">
+                  <div class="col-sm-7">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">20% Flat Off</h5>
+                      <p class="card-text d-none">
+                        Pick your desired product and get flat 20% offer & 12%
+                        cashback based on your payment method.
+                      </p>
+                      <p class="card-text ">
+                        <button type="button" class="btn btn-outline-dark">
+                          Dark
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-5">
+                    <img class="card-img w-75 d-block mx-auto position-relative" src="./home-1-slide-1.png"
+                      style="z-index: 5; right: 50px" alt="Card image" />
+                    <img src="./home-1-slide-2.png" alt="" class="d-block card-image mx-auto position-absolute"
+                      style="width: 76%; z-index: 0; top: 0; right: 22%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="container pb-3 pt-3">
+      <h4>Shop by Categories</h4>
+      <p>Pick your desired & start purchasing</p>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row d-flex justify-content-between" style="overflow:hidden ;">
+      <div class="col-6 col-sm-2 ">
+        <div class="card">
+          <img class="card-img-top rounded-circle  "
+            src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-17-432x432.png "
+            alt="Card image cap" />
+          <div class="card-body">
+            <p class="card-text">Chairs(3)</p>
+            <p>Recliners & Office Chairs</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-2">
+        <div class="card">
+          <img class="card-img-top rounded-circle"
+            src="		https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-19-432x432.png "
+            alt="Card image cap" />
+          <div class="card-body">
+            <p class="card-text">Dresses{11}</p>
+            <p>Modern Collections for All</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 d-none d-sm-block">
+        <div class="card">
+          <img class="card-img-top rounded-circle"
+            src="		https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-21-432x432.png"
+            alt="Card image cap" />
+          <div class="card-body">
+            <p class="card-text">Handbags&Wallets</p>
+            <p>Leather & Handmade</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-sm-block col-sm-2">
+        <div class="card">
+          <img class="card-img-top rounded-circle"
+            src="		https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-14-432x432.png"
+            alt="Card image cap" />
+          <div class="card-body">
+            <p class="card-text">Home Decor(9)</p>
+            <p>Affordable Collections</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-sm-block col-sm-2">
+        <div class="card">
+          <img class="card-img-top rounded-circle"
+            src="https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-15-432x432.png "
+            alt="Card image cap" />
+          <div class="card-body">
+            <p class="card-text">Sofaes</p>
+            <p>5 Seater, L-type</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <section>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-sm-4 pr-3">
+          <div class="card bg-dark text-white">
+            <img class="card-img"
+              src="https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/home-1-banner-2.png"
+              alt="Card image" />
+            <div class="card-img-overlay">
+              <p class="text-dark">Low Price Home Decors & Furnitures.</p>
+              <p class="text-dark">Buy items that fits in your budget</p>
+              <p class="text-dark">Explore Now</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pr-3">
+          <div class="card bg-dark text-white">
+            <img class="card-img"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/home-1-banner-1.png"
+              alt="Card image" />
+            <div class="card-img-overlay">
+              <p class="text-dark">Get Huge Discounts on iPads & Tablets</p>
+              <p class="text-dark">40% Offer on previous year models.</p>
+              <p class="text-dark">Explore Now</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pr-3">
+          <div class="card bg-dark text-white">
+            <img class="card-img"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/home-1-banner-3.png"
+              alt="Card image" />
+            <div class="card-img-overlay">
+              <p class="text-dark">Flat 40% Offer on Few Selected Brands.</p>
+              <p class="text-dark">Buy 1 Get 1 also applicable for items.</p>
+              <p class="text-dark">Explore Now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h5>Shop by Category.</h5>
+      <p>Pick your desired & start purchasing</p>
+    </div>
+  </section>
+  <section>
+    <div class="container bg-light">
+      <div class="row">
+        <div class="col-sm-12 d-flex justify-content-between">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top"
+              src="https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-5-432x432.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Chairs & Sofas (1)</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-1-432x432.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Gadgets (4)</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-4-432x432.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Shoes (11)</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-3-432x432.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Smartphones (10)</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/04/product-categories-2-432x432.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Televisions (5)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container d-flex">
+      <div class="row justify-content-between">
+        <div class="col-sm-2">
+          <div class="card w-100">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/11/product-thumbnail-410-432x540.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Smartphones</p>
+              <h5 class="card-title" style="font-size: 18px">
+                Apple 11-inch iPad Pro (2021) Wi-Fi 128GB
+              </h5>
+              <h6>$1,099.00 $1,299.00 Space Gray Silver</h6>
+              <a href="#" class="btn btn-primary">Next</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card w-100">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/11/product-thumbnail-410-432x540.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Smartphones</p>
+              <h5 class="card-title">
+                Apple 11-inch iPad Pro (2021) Wi-Fi 128GB
+              </h5>
+              <h6>$1,099.00 $1,299.00 Space Gray Silver</h6>
+              <a href="#" class="btn btn-primary">Next</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card w-100">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/11/product-thumbnail-410-432x540.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Smartphones</p>
+              <h5 class="card-title">
+                Apple 11-inch iPad Pro (2021) Wi-Fi 128GB
+              </h5>
+              <h6>$1,099.00 $1,299.00 Space Gray Silver</h6>
+              <a href="#" class="btn btn-primary">Next</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card w-100">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/11/product-thumbnail-410-432x540.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Smartphones</p>
+              <h5 class="card-title">
+                Apple 11-inch iPad Pro (2021) Wi-Fi 128GB
+              </h5>
+              <h6>$1,099.00 $1,299.00 Space Gray Silver</h6>
+              <a href="#" class="btn btn-primary">Next</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card w-100">
+            <img class="card-img-top"
+              src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/11/product-thumbnail-410-432x540.png"
+              alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">Smartphones</p>
+              <h5 class="card-title">
+                Apple 11-inch iPad Pro (2021) Wi-Fi 128GB
+              </h5>
+              <h6>$1,099.00 $1,299.00 Space Gray Silver</h6>
+              <a href="#" class="btn btn-primary">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="w-100">
+            <img class="w-100" src="https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/02/home-1-banner-1.jpg"
+              alt="" />
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-3">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2022/02/product-thumbnail-435-432x540.png"
+                      alt="First slide" />
+                    <a> Handbags & Wallets</a>
+                    <a>Athletic Works Solid Baseball Cap</a><br />
+                    <a>$19.99</a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-170-432x540.png"
+                      alt="First slide" />
+                    <a> Handbags & Wallets</a>
+                    <a>Athletic Works Solid Baseball Cap</a><br />
+                    <a>$19.99</a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-168-432x540.png"
+                      alt="First slide" />
+                    <a> Handbags & Wallets</a>
+                    <a>Athletic Works Solid Baseball Cap</a><br />
+                    <a>$19.99</a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-53-432x540.png"
+                      alt="First slide" />
+                    <a> Handbags & Wallets</a>
+                    <a>Athletic Works Solid Baseball Cap</a><br />
+                    <a>$19.99</a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-23-432x540.png"
+                      alt="First slide" />
+                    <a> Handbags & Wallets</a>
+                    <a>Athletic Works Solid Baseball Cap</a><br />
+                    <a>$19.99</a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="First slide" />
+                    <a> Handbags & Wallets</a>
+                    <a>Athletic Works Solid Baseball Cap</a><br />
+                    <a>$19.99</a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100"
+                      src="		https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-156-432x540.png"
+                      alt="First slide" />
+                    <a> Handbags & Wallets</a>
+                    <a>Athletic Works Solid Baseball Cap</a><br />
+                    <a>$19.99</a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100"
+                      src="		https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-167-432x540.png"
+                      alt="First slide" />
+                    <a> Handbags & Wallets</a>
+                    <a>Athletic Works Solid Baseball Cap</a><br />
+                    <a>$19.99</a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100"
+                      src="	https://demo.agnidesigns.com/cartify/wp-content/uploads/2021/10/product-thumnail-165-432x540.png"
+                      alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide" />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="p-3 mb-2 bg-warning text-dark ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <i class="fa-solid fa-van-shuttle"></i>
+          <p class="card-text">Free shipping for order more than $240.</p>
+        </div>
+        <div class="col-sm-2">
+          <i class="fa-solid fa-van-shuttle"></i>
+          <p class="card-text">Free shipping for order more than $240.</p>
+        </div>
+        <div class="col-sm-2">
+          <i class="fa-solid fa-van-shuttle"></i>
+          <p class="card-text">Free shipping for order more than $240.</p>
+        </div>
+        <div class="col-sm-3">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <h6>Download App</h6>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="p-3 mb-2 bg-warning text-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <h5>Shopping</h5>
+          <p>My Account</p>
+          <p>Shipping</p>
+          <p>Orders</p>
+          <p>Terms & Condition</p>
+        </div>
+        <div class="col-sm-2">
+          <h5>Quick Links</h5>
+          <p>About Us</p>
+          <p>Shop Locator</p>
+          <p>Privacy & Policies</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="col-sm-2">
+          <h5>Shopping</h5>
+          <p>My Account</p>
+          <p>Shipping</p>
+          <p>Orders</p>
+          <p>Terms & Conditionsa</p>
+        </div>
+        <div class="col-sm-2">
+          <h5>Shopping</h5>
+          <p>About Us</p>
+          <p>Shop Locator</p>
+          <p>Privacy & Policies</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="col-sm-2">
+          <h5>Contacct</h5>
+          <p>PO Box. 16122, Collins Street, Victoria, Australia.</p>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
